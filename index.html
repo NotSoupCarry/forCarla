@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Carla</title>
+
+  <link rel="icon" href="assets/favicon.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ══ SCHERMATA INIZIALE (password) ══ -->
+  <section id="start-screen" class="screen">
+    <h1 class="title">FOR CARLA <3 </h1>
+    <img class="art" src="assets/start.gif" alt="Us">
+    <p class="subtitle">You mean the world to me <3 </p>
+    <p class="subtitle">I'm starting to forget... <br>What did you want to tell me again?</p>
+
+    <div class="prompt">
+      <textarea id="password" rows="7"
+                autocomplete="off" maxlength="200"
+                placeholder="Come on..."
+                aria-label="Your message"></textarea>
+    </div>
+    <button id="enter" class="btn">Enter</button>
+    <p id="error" class="error" hidden>I KNOW YOU HAD SOMETHING TO SAY D:</p>
+
+    <br> 
+    <div class="floaties">
+      <span class="floaty">muy preciosa</span>
+      <span class="floaty">mi sol</span>
+      <span class="floaty">cutie</span>
+      <span class="floaty">mi bombon</span>
+      <span class="floaty">amorino</span>
+      <span class="floaty">bambolina</span>
+      <span class="floaty"> <3 </span>
+    </div>
+
+
+  </section>
+
+  <!-- ══ SCHERMATA DI GIOCO ══ -->
+  <section id="game-screen" class="screen" hidden>
+    <div class="dialogue">
+      <img class="avatar" src="assets/avatar.jpg" alt="Avatar">
+      <div id="scene" class="bubble" aria-live="polite"></div>
+    </div>
+    <div id="controls" class="controls"></div>
+    <button id="restart" class="btn ghost" hidden>&#8635; Restart</button>
+  </section>
+
+  <!-- ══ SCHERMATA FINALE ══ -->
+  <section id="letter-screen" class="screen" hidden>
+    <article class="letter">
+      <h2 id="letter-title" class="letter-title"></h2>
+      <div id="letter-body" class="letter-body"></div>
+      <p id="letter-sign" class="letter-sign"></p>
+    </article>
+    <button id="restart2" class="btn ghost">&#8635; Restart</button>
+  </section>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
